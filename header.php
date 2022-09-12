@@ -27,6 +27,9 @@
         <li class="nav-item">
           <a class="nav-link" href="./page3.php">Page3</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./page4.php">Page4</a>
+        </li>
       </ul>
     </div>
   </div>
