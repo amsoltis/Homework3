@@ -1,5 +1,5 @@
 <?php require_once("header.php"); ?>
-</table>
+
 <?php
 $servername = "localhost";
 $username = "asoltiso_asoltis";
@@ -26,4 +26,3 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 ?>
-</table>
