@@ -19,13 +19,13 @@
           <a class="nav-link" href="./index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./cat.php">Cat</a>
+          <a class="nav-link" href="./page1.php">Page1</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./post.php">Post</a>
+          <a class="nav-link" href="./page2.php">Page2</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./get.php">Get</a>
+          <a class="nav-link" href="./page3.php">Page3</a>
         </li>
       </ul>
     </div>
