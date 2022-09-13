@@ -1,4 +1,6 @@
 <?php require_once("header.php"); ?>
+<!doctype html>
+<html lang="en">
 
 <?php
 $servername = "localhost";
@@ -19,7 +21,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
-    echo "id: " . $row["InstructorID"]. " - Name: " . $row["LastName"]. "<br>";
+    echo "id: " . $row["InstructorID"]. " - FirstName: " . $row["LastName"].", " . $row["LastName"]. "<br>";
   }
 } else {
   echo "0 results";
