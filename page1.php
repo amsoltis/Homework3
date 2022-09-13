@@ -26,7 +26,6 @@ if ($result->num_rows > 0) {
                     <td bgcolor="#D1FFC2"><?php echo $row["InstructorID"] ?></td>
                     <td bgcolor="#D1FFC2"><?php echo $row["LastName"] ?></td>
                     <td bgcolor="#D1FFC2"><?php echo $row["FirstName"] ?></td>
-                    <td bgcolor="#D1FFC2">Debug- Delete- Edit</td>
                         </tr>      
   }
 } else {
