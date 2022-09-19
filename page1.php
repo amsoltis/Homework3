@@ -48,9 +48,3 @@ $result = $conn->query($sql);
     echo "0 results";
 } 
 ?>
-       </tbody>
-    </div>
-</table>
-}
-$conn->close();
-?>
