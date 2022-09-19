@@ -36,6 +36,3 @@ $result = $conn->query($sql);
        </tbody>
     </div>
 </table>
-}
-$conn->close();
-?>
