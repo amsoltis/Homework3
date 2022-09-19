@@ -40,3 +40,6 @@ $result = $conn->query($sql);
        </tbody>
     </div>
 </table>
+
+<p><a href="./page1.php">Back to Instructor Tables</a></p>
+<p><a href="./page2.php">Back to Courses Tables</a></p>
