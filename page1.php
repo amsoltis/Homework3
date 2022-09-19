@@ -23,11 +23,11 @@ $result = $conn->query($sql);
     while($row = $result->fetch_assoc()) {
 
 
-        echo <tr>
-                  <td> <?$row["InstructorID"]?></td>
-                  <td> <?$row["LastName"]?></td>
-                  <td> <?$row["FirstName"]?></td>
-                </tr>;
+        echo '<tr>
+                  <td scope="row">' . $row["InstructorID"]. '</td>
+                  <td>' . $row["LastName"] .'</td>
+                  <td> '.$row["FirstName"] .'</td>
+                </tr>';
     }
 } else {
     echo "0 results";
