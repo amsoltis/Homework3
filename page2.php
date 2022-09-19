@@ -38,4 +38,4 @@ $result = $conn->query($sql);
     </div>
 </table>
 
-<p><a href="https://www.w3schools.com">Visit W3Schools.com!</a></p>
+<p><a href="./page3.php">Join Instructor and Courses Tables</a></p>
