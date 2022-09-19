@@ -22,7 +22,9 @@ $result = $conn->query($sql);
     // output data of each row
     while($row = $result->fetch_assoc()) {
 
-
+     <header>
+    <a href="./page2.php">link text</a>
+    </header>
         echo '<tr>
                   <td scope="row">' . $row["CourseID"]. '</td>
                   <td>' . $row["InstructorID"] .'</td>

@@ -23,7 +23,7 @@ $result = $conn->query($sql);
 
     while($row = $result->fetch_assoc()) {
 
-
+   
         echo '<tr>
                   <td scope="row">' . $row["I.InstructorID"]. '</td>
                   <td>' . $row["LastName"]. '</td>
