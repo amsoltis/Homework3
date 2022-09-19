@@ -26,7 +26,7 @@ $result = $conn->query($sql);
 
         echo '<tr>
                   <td scope="row">' . $row["I.InstructorID"]. '</td>
-                  <td>' . $row["LastName"] .'</td>
+                  <td>' . $row["LastName"]. '</td>
                   <td> '.$row["FirstName"] .'</td>
                   <td> '.$row["CourseID"] .'</td>
                   <td>' . $row["CourseNumber"] .'</td>
