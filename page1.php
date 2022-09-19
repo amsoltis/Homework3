@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Hello, world!</h1>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
 </html>
@@ -34,17 +34,18 @@ $result = $conn->query($sql);
     while($row = $result->fetch_assoc()) {
 
 
-        echo '<tr>
-                  <td scope="row">' . $row["InstructorID"]. '</td>
-                  <td>' . $row["LastName"] .'</td>
-                  <td> '.$row["FirstName"] .'</td>
-                </tr>';
+        echo <ul class="list-group list-group-horizontal">
+  <li scope="row">' . $row["InstructorID"]. '</li>
+</ul>
+<ul class="list-group list-group-horizontal-sm">
+  <li ' . $row["LastName"] .'</li>
+</ul>
+<ul class="list-group list-group-horizontal-md">
+  <li c'.$row["FirstName"] .</li>
+</ul>';
 
 
-
-
-
-    }
+}
 } else {
     echo "0 results";
 } 
