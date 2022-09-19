@@ -33,73 +33,20 @@ $result = $conn->query($sql);
     while($row = $result->fetch_assoc()) {
 
 
-        echo '
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-<div class="container">
- <div class="col-md-12">
- <div class="page-header">
- <h1>
- How to use bootstrap tables to  Display data from MySQL using PHP
- </h1>
- </div>
+        {
+            ?>
+            <tr>
+                <!-- FETCHING DATA FROM EACH
+                    ROW OF EVERY COLUMN -->
+                <td><?php echo $rows['InstructorID'];?></td>
+                <td><?php echo $rows['LastName'];?></td>
+                <td><?php echo $rows['FirstName'];?></td>
+            </tr>
+            <?php
+                }
+            ?>
+        </table>
+    </section>
+</body>
  
- 
- <div class="panel panel-success">
- <div class="panel-heading "> 
- <span class=""> This Source Code Provided By<br>
- <a href="http://sourcecodessite.com">SourceCodeSite.com</a> </span> 
- 
- </div>
- 
- <div class="panel-body">
- <div class="row">
- <div class="col-md-12">
- 
- <table id="table"
-                 	data-show-columns="true"
-                 data-height="460">
- </table>
- </div>
- </div>
-</div> 
-</div>
-</div>
-</div>';
-
-
-
-
-
-    }
-} else {
-    echo "0 results";
-} 
-?>
+</html>
