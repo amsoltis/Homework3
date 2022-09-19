@@ -25,9 +25,6 @@
           <a class="nav-link" href="./page2.php">Courses</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./page3.php">Join</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="./page4.php">Bird</a>
         </li>
         <li class="nav-item">
