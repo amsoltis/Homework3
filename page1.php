@@ -5,7 +5,7 @@
 <?php
 $servername = "localhost";
 $username = "asoltiso_asoltis";
-$password = "Tucker0509";
+$password = "OUcreate!";
 $dbname = "asoltiso_homework3";
 
 // Create connection
