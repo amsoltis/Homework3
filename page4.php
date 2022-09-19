@@ -38,3 +38,9 @@ $result = $conn->query($sql);
        </tbody>
     </div>
 </table>
+<body>
+    <form action="handlepost.php" method="post">
+Sory by Color: <input type="text" name="color"><br>
+<input type="submit">
+</form>
+  </body>
