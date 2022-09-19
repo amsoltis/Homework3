@@ -21,12 +21,8 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
-    //echo "id: " . $row["InstructorID"]. " - Name: " . $row["LastName"].", " . $row["FirstName"]. "<br>";
-    <tr>           
-                    <td bgcolor="#D1FFC2"><?php echo $row["InstructorID"] ?></td>
-                    <td bgcolor="#D1FFC2"><?php echo $row["LastName"] ?></td>
-                    <td bgcolor="#D1FFC2"><?php echo $row["FirstName"] ?></td>
-                        </tr>      
+    echo "id: " . $row["InstructorID"]. " - Name: " . $row["LastName"].", " . $row["FirstName"]. "<br>";
+       
   }
 } else {
   echo "0 results";
