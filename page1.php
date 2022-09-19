@@ -27,6 +27,7 @@ $result = $conn->query($sql);
                   <td scope="row">' . $row["InstructorID"]. '</td>
                   <td>' . $row["LastName"] .'</td>
                   <td> '.$row["FirstName"] .'</td>
+                   <br>
                 </tr>';
     }
 } else {
