@@ -19,13 +19,13 @@
           <a class="nav-link" href="./index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./page1.php">Table1</a>
+          <a class="nav-link" href="./page1.php">Instructors</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./page2.php">Table2</a>
+          <a class="nav-link" href="./page2.php">Courses</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./page3.php">Table3</a>
+          <a class="nav-link" href="./page3.php">Join Instructor and Courses</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./page4.php">Table4</a>
