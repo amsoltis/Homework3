@@ -17,15 +17,30 @@ if ($conn->connect_error) {
 
 $sql = "SELECT InstructorID, LastName, FirstName FROM Instructor";
 $result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-    echo "id: " . $row["InstructorID"]. " - Name: " . $row["LastName"].", " . $row["FirstName"]. "<br>";
        
-  }
+ if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+
+
+        echo '<tr>
+                  <td scope="row">' . $row["InstructorID"]. '</td>
+                  <td>' . $row["LastName"] .'</td>
+                  <td> '.$row["FirstName"] .'</td>
+                </tr>';
+
+
+
+
+
+    }
 } else {
-  echo "0 results";
+    echo "0 results";
+} 
+?>
+       </tbody>
+    </div>
+</table>
 }
 $conn->close();
 ?>
