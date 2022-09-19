@@ -22,9 +22,6 @@ $result = $conn->query($sql);
     // output data of each row
     while($row = $result->fetch_assoc()) {
 
-     <body>
-    <p><a href="./page3.php">Join Tables</a></p>
-    </body>
         echo '<tr>
                   <td scope="row">' . $row["CourseID"]. '</td>
                   <td>' . $row["InstructorID"] .'</td>
@@ -40,3 +37,5 @@ $result = $conn->query($sql);
        </tbody>
     </div>
 </table>
+
+<p><a href="https://www.w3schools.com">Visit W3Schools.com!</a></p>
