@@ -1,4 +1,5 @@
 <!doctype html>
+<?php require_once("header.php"); ?>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -47,7 +48,7 @@ if ($result->num_rows > 0) {
     <td>
       <form method="post" action="page5post.php">
         <input type="hidden" name="id" value="<?=$row["Color"]?>" />
-        <input type="submit" value="Sections" />
+        <input type="submit" value="Same Color" />
       </form>
     </td>
   </tr>
