@@ -45,12 +45,6 @@ if ($result->num_rows > 0) {
     <td><?=$row["Name"]?></td>
     <td><?=$row["Color"]?></td>
     <td><?=$row["Age"]?></td>
-    <td>
-      <form method="post" action="page5post.php">
-        <input type="hidden" name="id" value="<?=$row["Age"]?>" />
-        <input type="submit" value="Same Age" />
-      </form>
-    </td>
   </tr>
 <?php
   }
