@@ -11,3 +11,10 @@
   </body>
 </html>
 <?php require_once("footer.php"); ?>
+
+<body>
+Instructor - Table that shows instructors, and allows you to filter by 'Name'. Filters to only one result as its a appears once in Table.
+Courses - Table that shows courses taught, and allows you to filter by 'Instructor ID' to see only courses taught by that professor.
+Birds - Table shows information about birds, no filter.
+Cars - Table shows information about cars, allows you to filter by car color.
+</body>
