@@ -27,8 +27,9 @@ $result = $conn->query($sql);
         echo '<tr>
                   <td scope="row">' . $row["LastName"]. '</td>
                   <td> '.$row["FirstName"] .'</td>
-                  <td> '.$row["CourseID"] - . $row["CourseNumber"] ..'</td>
+                  <td> '.$row["CourseID"] ..'</td>
                   <td>' . $row["CourseNumber"] .'</td>
+                  <td>' . $row["I.InstructorID"] .'</td>
                   <br>
                   </tr>';
     }
