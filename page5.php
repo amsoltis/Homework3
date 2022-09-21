@@ -28,7 +28,12 @@ $result = $conn->query($sql);
                   <td>' . $row["Color"] .'</td>
                   <td> '.$row["Make"] .'</td>
                   <td> '.$row["Year"] .'</td>
-                  <br>
+                  <td>
+      <form method="post" action="course-section.php">
+        <input type="hidden" name="id" value="<?=$row["course_id"]?>" />
+        <input type="submit" value="Sections" />
+      </form>
+    </td>
                   </tr>';
     }
 } else {
