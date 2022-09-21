@@ -59,4 +59,5 @@ $conn->close();
 </html>
 
 <body>
-"Click the 'InstructorID to see other courses taught by that instructor'"
+Click the 'InstructorID' to see Instructor Name and other courses taught by that instructor
+</body>
