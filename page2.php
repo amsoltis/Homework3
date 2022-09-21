@@ -37,6 +37,3 @@ $result = $conn->query($sql);
        </tbody>
     </div>
 </table>
-
-<p><a href="./page1.php">Back to Instructor Table</a></p>
-<p><a href="./page2.php">Back to Courses Table</a></p>
