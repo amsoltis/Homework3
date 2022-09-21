@@ -15,9 +15,6 @@
       <th>InstructorID</th>
       <th>LastName</th>
       <th>FirstName</th>
-      <th>CourseID</th>
-      <th>CourseNumber</th>
-      <th>Section</th>
     </tr>
   </thead>
   <tbody>
@@ -35,7 +32,7 @@ if ($conn->connect_error) {
 }
 $iid = $_GET['id'];
 //echo $iid;
-$sql = "Select I.InstructorID, LastName, FirstName, CourseID, CourseNumber, Section FROM Instructor I Join Courses C on I.InstructorID = C.InstructorID where I.InstructorID=".$iid;
+$sql = "Select * From Instructor Where InstructorID =".$iid;
 //echo $sql;
     $result = $conn->query($sql);
 
@@ -47,9 +44,6 @@ if ($result->num_rows > 0) {
     <td><?=$row["InstructorID"]?></td>
     <td><?=$row["LastName"]?></td>
     <td><?=$row["FirstName"]?></td>
-    <td><?=$row["CourseID"]?></td>
-    <td><?=$row["CourseNumber"]?></td>
-    <td><?=$row["Section"]?></td>
   </tr>
 <?php
   }
