@@ -1,24 +1,14 @@
 <!doctype html>
-<?php require_once("header.php"); ?>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Courses</title>
+    <title>Instructors</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Courses</h1>
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>CourseID</th>
-      <th>InstructorID</th>
-      <th>Course</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
+    <h1>Instructors</h1>
+<div class="card-group">
     <?php
 $servername = "localhost";
 $username = "asoltiso_asoltis";
@@ -32,19 +22,28 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT CourseID, InstructorID, CourseNumber, Section from Courses";
-//echo $sql;
+$sql = "SELECT InstructorID, FirstName, LastName FROM Instructor";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
 ?>
-  <tr>
-    <td><?=$row["CourseID"]?></td>
-    <td><a href="page6.php?id=<?=$row["InstructorID"]?>"><?=$row["InstructorID"]?></a></td>
-    <td><?=$row["CourseNumber"]."-"?><?=$row["Section"]?></td>
-  </tr>
+   <div class="card">
+    <div class="card-body">
+      <h5 class="card-title"><?=$row["LastName"]." "?><?=$row["FirstName"]?></h5>
+      <p class="card-text"><ul>
+<?php
+    $section_sql = "Select I.InstructorID, LastName, FirstName, CourseID, CourseNumber, Section FROM Instructor I Join Courses C on I.InstructorID = C.InstructorID where I.InstructorID=". $row["instructor_id"];
+    $section_result = $conn->query($section_sql);
+    
+    while($section_row = $section_result->fetch_assoc()) {
+      echo "<li>" . $section_row["CourseID"] . "</li>";
+    }
+?>
+      </ul></p>
+  </div>
+    </div>
 <?php
   }
 } else {
@@ -52,11 +51,8 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 ?>
-  </tbody>
-    </table>
+  </card-group>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>
-
-<body>
-"Click the 'InstructorID to see other courses taught by that instructor'"
