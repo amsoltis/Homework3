@@ -34,7 +34,7 @@ if ($conn->connect_error) {
 }
 
 $sql = "SELECT CourseID, InstructorID, CourseNumber, Section from Courses";
-echo $sql;
+//echo $sql;
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
