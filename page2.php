@@ -14,8 +14,7 @@
     <tr>
       <th>CourseID</th>
       <th>InstructorID</th>
-      <th>CourseNumber</th>
-      <th>Section</th>
+      <th>Course</th>
       <th></th>
     </tr>
   </thead>
@@ -44,8 +43,7 @@ if ($result->num_rows > 0) {
   <tr>
     <td><?=$row["CourseID"]?></td>
     <td><?=$row["InstructorID"]?></td>
-    <td><?=$row["CourseNumber"]?></td>
-    <td><?=$row["Section"]?></td>
+    <td><?=$row["CourseNumber"]."-"?><?=$row["Section"]?></td>
   </tr>
 <?php
   }
