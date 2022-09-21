@@ -33,7 +33,7 @@ if ($conn->connect_error) {
 }
 $cid = $_POST['id'];
 //echo $iid;
-$sql = "SELECT * FROM `Cars` WHERE Color like '$cid';
+$sql = "SELECT * FROM `Cars` WHERE Color like $cid";
 //echo $sql;
     $result = $conn->query($sql);
 
