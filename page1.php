@@ -35,5 +35,3 @@ $result = $conn->query($sql);
        </tbody>
     </div>
 </table>
-
-<p><a href="./page3.php">Join Instructor and Courses Tables</a></p>
