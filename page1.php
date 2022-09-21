@@ -23,12 +23,12 @@ $result = $conn->query($sql);
     while($row = $result->fetch_assoc()) {
 
 
-        echo '<tr>
-                  <td scope="row">'<a href="page3.php"><?=$row["InstructorID"]. '</a></td>
-                  <td>' . $row["LastName"] .'</td>
-                  <td> '.$row["FirstName"] .'</td>
-                   <br>
-                </tr>';
+        ?>
+  <tr>
+    <td><?=$row["InstructorID"]?></td>
+    <td><a href="instructor-section.php?id=<?=$row["InstructorID"]?>"><?=$row["FirstName"]?></a></td>
+  </tr>
+<?php
     }
 } else {
     echo "0 results";
