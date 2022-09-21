@@ -24,7 +24,7 @@ $result = $conn->query($sql);
 
 
         echo '<tr>
-                  <td scope="row">' . $row["InstructorID"]. '</td>
+                  <td scope="row">'<a href="page3.php"><?=$row["InstructorID"]. '</a></td>
                   <td>' . $row["LastName"] .'</td>
                   <td> '.$row["FirstName"] .'</td>
                    <br>
