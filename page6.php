@@ -22,7 +22,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT InstructorID, FROM Instructor";
+$sql = "SELECT InstructorID, FirstName, LastName FROM Instructor";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
