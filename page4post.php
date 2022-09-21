@@ -4,18 +4,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Same Color</title>
+    <title>Same Age</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Sections</h1>
+    <h1>Same Age</h1>
 <table class="table table-striped">
   <thead>
     <tr>
-      <th>CarID</th>
+      <th>Bird ID</th>
+      <th>Name</th>
       <th>Color</th>
-      <th>Make</th>
-      <th>Year</th>
+      <th>Age</th>
     </tr>
   </thead>
   <tbody>
@@ -33,7 +33,7 @@ if ($conn->connect_error) {
 }
 $cid = $_POST['id'];
 //echo $iid;
-$sql = "SELECT * FROM `Cars` WHERE Color like '$cid'";
+$sql = "SELECT * FROM `Cars` WHERE Age like '$cid'";
 //echo $sql;
     $result = $conn->query($sql);
 
@@ -42,10 +42,10 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
 ?>
   <tr>
-    <td><?=$row["CarID"]?></td>
+    <td><?=$row["Birdid"]?></td>
+    <td><?=$row["Name"]?></td>
     <td><?=$row["Color"]?></td>
-    <td><?=$row["Make"]?></td>
-    <td><?=$row["Year"]?></td>
+    <td><?=$row["Age"]?></td>
   </tr>
 <?php
   }
