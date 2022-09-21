@@ -33,7 +33,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * from Cars";
+$sql = "SELECT CourseID, InstructorID, CourseNumber, Section from Cars";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
