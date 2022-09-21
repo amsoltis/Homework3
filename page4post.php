@@ -34,7 +34,7 @@ if ($conn->connect_error) {
 $cid = $_POST['id'];
 //echo $iid;
 $sql = "SELECT * FROM `Cars` WHERE Age like '$cid'";
-//echo $sql;
+echo $sql;
     $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
