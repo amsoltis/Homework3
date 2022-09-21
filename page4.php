@@ -39,7 +39,7 @@ $result = $conn->query($sql);
     </div>
 </table>
 <body>
-    <form action="handlepost.php" method="post">
+    <form action="page4post.php" method="post">
 Sort by Color: <input type="text" name="color"><br>
 <input type="submit">
 </form>

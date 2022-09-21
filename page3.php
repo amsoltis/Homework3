@@ -25,10 +25,9 @@ $result = $conn->query($sql);
 
    
         echo '<tr>
-                  <td scope="row">' . $row["I.InstructorID"]. '</td>
-                  <td>' . $row["LastName"]. '</td>
+                  <td scope="row">' . $row["LastName"]. '</td>
                   <td> '.$row["FirstName"] .'</td>
-                  <td> '.$row["CourseID"] .'</td>
+                  <td> '.$row["CourseID"] - . $row["CourseNumber"] ..'</td>
                   <td>' . $row["CourseNumber"] .'</td>
                   <br>
                   </tr>';

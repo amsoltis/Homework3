@@ -15,7 +15,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT * FROM Cars";
+$sql = "SELECT * FROM Birds";
 $result = $conn->query($sql);
        
  if ($result->num_rows > 0) {
@@ -24,10 +24,10 @@ $result = $conn->query($sql);
 
 
         echo '<tr>
-                  <td scope="row">' . $row["CarID"]. '</td>
-                  <td>' . $row["Color"] .'</td>
-                  <td> '.$row["Make"] .'</td>
-                  <td> '.$row["Year"] .'</td>
+                  <td scope="row">' . $row["Birdid"]. '</td>
+                  <td>' . $row["Name"] .'</td>
+                  <td> '.$row["Color"] .'</td>
+                  <td> '.$row["Age"] .'</td>
                   <br>
                   </tr>';
     }
@@ -38,9 +38,3 @@ $result = $conn->query($sql);
        </tbody>
     </div>
 </table>
-<body>
-    <form action="page5post.php" method="post">
-Sort by Color: <input type="text" name="color"><br>
-<input type="submit">
-</form>
-  </body>
