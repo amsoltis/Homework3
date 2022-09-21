@@ -26,7 +26,7 @@ $result = $conn->query($sql);
         ?>
   <tr>
     <td><?=$row["InstructorID"]?></td>
-    <td><a href="instructor-section.php?id=<?=$row["InstructorID"]?>"><?=$row["FirstName"]?></a></td>
+    <td><a href="page3.php?id=<?=$row["InstructorID"]?>"><?=$row["FirstName"]?></a></td>
   </tr>
 <?php
     }
