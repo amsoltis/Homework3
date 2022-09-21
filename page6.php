@@ -1,4 +1,5 @@
 <!doctype html>
+<?php require_once("header.php"); ?>
 <html lang="en">
   <head>
     <meta charset="utf-8">
