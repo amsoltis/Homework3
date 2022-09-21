@@ -35,7 +35,7 @@ if ($conn->connect_error) {
 $iid = $_GET['id'];
 //echo $iid;
 $sql = "Select I.InstructorID, LastName, FirstName, CourseID, CourseNumber, Section FROM Instructor I Join Courses C on I.InstructorID = C.InstructorID where I.InstructorID=".$iid;
-echo $sql;
+//echo $sql;
     $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
