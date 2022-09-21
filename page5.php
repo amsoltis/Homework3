@@ -12,10 +12,10 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th>ID</th>
-      <th>Prefix</th>
-      <th>Number</th>
-      <th>Description</th>
+      <th>CarID</th>
+      <th>Color</th>
+      <th>Make</th>
+      <th>Year</th>
       <th></th>
     </tr>
   </thead>
