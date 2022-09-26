@@ -10,7 +10,3 @@
       <br>Birds - Table shows information about birds, no filter.</br>
       <br>Cars - Table shows information about cars, allows you to filter by car color.</br>
   </body>
-
-<footer>
-<?php require_once("footer.php"); ?>
-</footer>
