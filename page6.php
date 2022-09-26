@@ -32,7 +32,8 @@ if ($result->num_rows > 0) {
 <?php
     $section_sql = "Select I.InstructorID, LastName, FirstName, CourseID, CourseNumber, Section FROM Instructor I Join Courses C on I.InstructorID = C.InstructorID where I.InstructorID=". $row["InstructorID"];
     $section_result = $conn->query($section_sql);
-    
+                                        
+    <li> "Header" </li>
     while($section_row = $section_result->fetch_assoc()) {
       echo "<li>" . $section_row["CourseNumber"] . "-" . $section_row["Section"] . "</li>";
     }
