@@ -3,7 +3,7 @@
   </head>
   
   <body>
-    <h1>Sections</h1>
+    <h1>Instructor</h1>
 <table class="table table-striped">
   <thead>
     <tr>
