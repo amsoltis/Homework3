@@ -53,5 +53,5 @@ $conn->close();
   </body>
   
 <footer>
-Click the 'InstructorID' to see Instructor Name and other courses taught by that instructor
+Click the 'InstructorID' to see all courses taught by each professor.
 </footer>
