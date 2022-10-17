@@ -28,7 +28,8 @@ if ($result->num_rows > 0) {
    <div class="card">
     <div class="card-body">
       <h5 class="card-title"><?=$row["InstructorID"]."-"?><?=$row["LastName"]." "?><?=$row["FirstName"]?></h5>
-      <p class="card-text"><ul>
+      <p class="card-text">
+      <ul>
 <?php
     $section_sql = "Select I.InstructorID, LastName, FirstName, CourseID, CourseNumber, Section FROM Instructor I Join Courses C on I.InstructorID = C.InstructorID where I.InstructorID=". $row["InstructorID"];
     $section_result = $conn->query($section_sql);
